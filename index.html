@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+    <!-- MAIN VIDEO  -->
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="assets/video/typing-video.mp4" type="video/mp4">
+    </video> -->
+
+    <canvas class="background"></canvas>
+
+
+
+    <!-- MENU -->
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a class="underline" href="#">O mnie</a>
+            </li>
+            <li>
+                <a class="underline" href="#">Umiejętności</a>
+            </li>
+            <li>
+                <a class="underline" href="#">Projekty</a>
+            </li>
+            <li>
+                <a class="underline" href="#">Kontakt</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- MAIN SECTION -->
+    <section class="main-section">
+        <div class="title">
+            <div class="left-bracket"></div>
+            <h1 id="typedtext"></h1>
+            <div class="right-bracket"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2 class="move-elements">O mnie</h2>
+        <div class="move-elements about-text">
+            <p>Dzień dobry, Nazywam się Bartosz Kołodziejczak. Jestem programistą, który pierwsze kroki zaczął stawiać na początku
+                roku. Przełomem było zapisanie się na 6 tygodniowy stacjonarny kurs, organizowany przez szkołę Coders Lab,
+                o profilu Frontend Developer. Na bootcampie nauczyłem się takich języków jak: HTML, CSS, JavaScript. Sporo
+                czasu poświęciliśmy również na: JQuery, RWD, Sass, WordPress, PHP i system kontroli wersji Git. W czerwcu
+                miałem okazje uczestniczyć w stażu, gdzie poszerzyłem swoją wiedzę o Bootstrapa, oraz szlifowałem wcześniej
+                nabyte umiejętności. Aktualnie pracuje w softwerhouse Grand Software.</p>
+        </div>
+        <img src="assets/img/dyplom.jpg" alt="dyplom">
+    </section>
+
+    <!-- SKILLS  -->
+    <section class="skills">
+        <h2>Technologie</h2>
+        <div class="box">
+            <img onclick="move()" src="assets/img/logo/HTML_Logo.png" alt="html logo">
+            <img src="assets/img/logo/css_logo.png" alt="css logo">
+            <img src="assets/img/logo/sass_logo.svg" alt="sass logo">
+            <img src="assets/img/logo/boostrap_logo.svg" alt="bootstrap logo">
+            <img src="assets/img/logo/js_logo.png" alt="js logo">
+            <img src="assets/img/logo/jquery_logo.png" alt="jquery logo">
+            <img src="assets/img/logo/ts_logo.png" alt="ts logo">
+            <img src="assets/img/logo/gulp_logo.png" alt="gulp logo">
+            <img src="assets/img/logo/npm_logo.png" alt="npm logo">
+            <img src="assets/img/logo/git_logo.png" alt="git logo">
+            <img src="assets/img/logo/php_logo.svg" alt="php logo">
+            <img src="assets/img/logo/wordpress_logo.png" alt="wordpress logo">
+            <img src="assets/img/logo/symfony_logo.png" alt="symfony logo">
+            <img src="assets/img/logo/ionic_logo.png" alt="ionic logo">
+            <img src="assets/img/logo/angular_logo.png" alt="angular logo">
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <div class="contact">
+        <form method="post" action="send.php">
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" id="Name" />
+
+            <label for="City">City:</label>
+            <input type="text" name="City" id="City" />
+
+            <label for="Email">Email:</label>
+            <input type="text" name="Email" id="Email" />
+
+            <label for="Message">Message:</label>
+            <br />
+            <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+            <input type="submit" name="submit" value="Submit" class="submit-button" />
+        </form>
+    </div>
+
+
+
+
+
+    <script src="node_modules/particlesjs/dist/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/move.js"></script>
+
+</body>
+
+</html>
