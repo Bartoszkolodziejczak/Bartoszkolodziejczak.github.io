@@ -1,7 +1,11 @@
 @import "_variables";
 body {
+    // width: 100%;
+    // height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
     background-color: $default-color;
 }
 
@@ -20,22 +24,18 @@ body {
     opacity: .5;
 }
 
-#particles-js {
-    position: relative;
-    width: 100%;
-    height: 100%; // background-color: #000;
-    background-image: url(../img/desert.jpg); // background: #fff;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
+// #particles-js {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%; // background-color: #000;
+//     // background-image: url(../img/desert.jpg); // background: #fff;
+// }
 /*Main menu*/
 
 header {
     height: 100vh;
     position: relative;
-    background-image: url(../img/foggy.jpg);
+    background-image: url(../img/desert.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -49,14 +49,13 @@ header {
     margin: $section-bottom;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1411764705882353);
     z-index: 10;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.72);
+    position: relative; // background-color: rgba(0, 0, 0, 0.72);
     ul {
         margin-right: 2em;
         li {
             display: inline;
             padding-right: 0.5em;
-            font-family: $menu-font;
+            font-family: $main-font;
             text-transform: uppercase;
             a.underline {
                 text-decoration: none;
@@ -89,63 +88,91 @@ header {
     }
 }
 
-.main-section {
-    display: flex;
-    align-items: center;
-    padding: 6em;
-    margin-bottom: 6em;
-    .title {
-        width: 100%;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0.7);
-        .left-bracket {
-            border-top: $bracket;
-            border-bottom: $bracket;
-            border-left: $bracket;
-            position: absolute;
-            width: 40%;
-            top: 0;
-            bottom: 0;
+.title {
+    text-align: center;
+    .text {
+        display: inline-block;
+        border: 2px solid rgba(144, 103, 55, 0.51);
+        padding: 1em;
+        font-family: $main-font;
+        border-radius: 1%;
+        background-color: rgba(80, 106, 97, 0.4117647058823529);
+        h1 {
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #fff;
         }
-    }
-    .right-bracket {
-        border-right: $bracket;
-        border-top: $bracket;
-        border-bottom: $bracket;
-        position: absolute;
-        width: 40%;
-        top: 0;
-        right: 0;
-        bottom: 0;
-    }
-    h1 {
-        text-align: center;
-        font-size: 5em;
-        font-family: $menu-font;
-        color: $primary-color;
-        @media(max-width: 889px) {
-            font-size: 3em;
+        p {
+            color: #fff;
         }
-        @media(max-width: 600px) {
-            font-size: 2em;
-        }
-        @media(max-width: 421px) {
-            font-size: 1em;
+        span {
+            color: rgba(100, 234, 190, 0.4);
         }
     }
 }
 
+// .main-section {
+//     display: flex;
+//     align-items: center;
+//     padding: 6em;
+//     margin-bottom: 6em;
+//     .title {
+//         width: 100%;
+//         position: relative;
+//         background-color: rgba(0, 0, 0, 0.7);
+//         .left-bracket {
+//             border-top: $bracket;
+//             border-bottom: $bracket;
+//             border-left: $bracket;
+//             position: absolute;
+//             width: 40%;
+//             top: 0;
+//             bottom: 0;
+//         }
+//     }
+//     .right-bracket {
+//         border-right: $bracket;
+//         border-top: $bracket;
+//         border-bottom: $bracket;
+//         position: absolute;
+//         width: 40%;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//     }
+//     h1 {
+//         text-align: center;
+//         font-size: 5em;
+//         font-family: $main-font;
+//         color: $primary-color;
+//         @media(max-width: 889px) {
+//             font-size: 3em;
+//         }
+//         @media(max-width: 600px) {
+//             font-size: 2em;
+//         }
+//         @media(max-width: 421px) {
+//             font-size: 1em;
+//         }
+//     }
+// }
 /*About*/
 
 .about {
     overflow: hidden;
     width: 100%; // height: 700px;
-    background-color: rgba(239, 234, 234, 0.52);
+    background-image: url(../img/spiration-light.png);
     position: relative;
-    font-family: $menu-font;
+    font-family: $main-font;
+    h2 {
+        // margin: 1em auto;
+        color: #4d9a85;
+        text-transform: uppercase;
+        text-align: center;
+    }
     .move-elements {
-        display: block;
-        position: absolute;
+        margin: 1em auto;
+        display: block; // position: absolute;
         width: 60%;
         p {
             font-size: 1.2em;
@@ -153,7 +180,7 @@ header {
     }
     .about-text {
         top: 5em;
-        background: rgba(0, 0, 0, 0.82);
+        background: rgb(144, 129, 89);
         border-radius: 0.5em;
         p {
             color: #fff;
