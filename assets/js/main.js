@@ -1,6 +1,7 @@
 
 window.onload = function () {
 
+
     //Particles initialize
 
     particlesJS("particles-js", {
@@ -52,8 +53,8 @@ window.onload = function () {
             },
             "line_linked": {
                 "enable": true,
-                "distance": 100,
-                "color": "#000",
+                "distance": 50,
+                "color": "#fff",
                 "opacity": 0.5,
                 "width": 2
             },
@@ -64,7 +65,7 @@ window.onload = function () {
                 "random": false,
                 "straight": false,
                 "out_mode": "out",
-                "bounce": false,
+                "bounce": true,
                 "attract": {
                     "enable": false,
                     "rotateX": 600,
@@ -179,13 +180,16 @@ window.onload = function () {
     //Paralax
     var scene = document.getElementById('scene');
     var parallaxInstance = new Parallax(scene);
+
+
+
 };
 
 
 
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "Front-end developer");
+    "< Front-end developer />");
 var iSpeed = 100; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
@@ -209,7 +213,7 @@ function typewriter() {
         iIndex++;
         if (iIndex != aText.length) {
             iArrLength = aText[iIndex].length;
-            setTimeout("typewriter()", 2000);
+            setTimeout("typewriter()", 2500);
 
         }
     } else {
@@ -219,6 +223,38 @@ function typewriter() {
 
 
 typewriter();
+
+
+//Scroll
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+//Back to top
+let backToTop = document.getElementById("backToTop");
+
+window.addEventListener('scroll', function (e) {
+    if (window.scrollY > 200) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+});
+
+backToTop.addEventListener("click", function () {
+    document.getElementById('top').scrollIntoView({
+        behavior: 'smooth'
+    })
+});
+
+
 
 
 

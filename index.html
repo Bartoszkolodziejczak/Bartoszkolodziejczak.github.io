@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Bartosz Kołodziejczak - Portfolio</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/aos.css">
 
@@ -24,22 +24,26 @@
 
 
         <!-- MENU -->
-        <nav class="main-menu">
+        <nav class="main-menu" id="top">
             <ul>
                 <li>
-                    <a class="underline" href="#">O mnie</a>
+                    <a class="underline" href="#about">O mnie</a>
                 </li>
                 <li>
-                    <a class="underline" href="#">Umiejętności</a>
+                    <a class="underline" href="#skills">Umiejętności</a>
                 </li>
                 <li>
-                    <a class="underline" href="#">Projekty</a>
+                    <a class="underline" href="#projects">Projekty</a>
                 </li>
                 <li>
                     <a class="underline" href="#">Kontakt</a>
                 </li>
             </ul>
         </nav>
+
+
+
+
 
         <div class="title">
             <div class="text">
@@ -72,8 +76,8 @@
 
 
     <!-- ABOUT -->
-    <section class="about">
-        <h2 class="move-elements" data-aos="fade-up">O mnie</h2>
+    <section class="about" id="about">
+        <h2 data-aos="fade-up">O mnie</h2>
         <div class="move-elements about-text" data-aos="fade-right">
             <p>Dzień dobry, Nazywam się Bartosz Kołodziejczak. Jestem programistą, który pierwsze kroki zaczął stawiać na początku
                 roku. Przełomem było zapisanie się na 6 tygodniowy stacjonarny kurs, organizowany przez szkołę Coders Lab,
@@ -90,28 +94,88 @@
     </section>
 
     <!-- SKILLS  -->
-    <!-- <section class="skills">
-        <h2>Technologie</h2>
+    <section class="skills">
+        <div class="background-color"></div>
+        <h2 id="skills">Umiejętności</h2>
         <div class="box">
             <img src="assets/img/logo/HTML_Logo.png" alt="html logo" data-aos="fade-up-right">
+        </div>
+        <div class="box">
             <img src="assets/img/logo/css_logo.png" alt="css logo" data-aos="fade-up-left">
+
+        </div>
+        <div class="box">
             <img src="assets/img/logo/sass_logo.svg" alt="sass logo" data-aos="zoom-in">
+
+        </div>
+        <div class="box">
             <img src="assets/img/logo/boostrap_logo.svg" alt="bootstrap logo" data-aos="zoom-in-up">
+
+        </div>
+        <div class="box">
             <img src="assets/img/logo/js_logo.png" alt="js logo" data-aos="zoom-in-down">
+
+        </div>
+        <div class="box">
             <img src="assets/img/logo/jquery_logo.png" alt="jquery logo" data-aos="zoom-in-left">
+
+        </div>
+        <div class="box">
             <img src="assets/img/logo/ts_logo.png" alt="ts logo" data-aos="zoom-in-right">
+
+        </div>
+        <div class="box">
             <img src="assets/img/logo/gulp_logo.png" alt="gulp logo" data-aos="zoom-out">
+
+        </div>
+        <div class="box">
             <img src="assets/img/logo/npm_logo.png" alt="npm logo" data-aos="zoom-out-up">
+
+        </div>
+        <div class="box">
             <img src="assets/img/logo/git_logo.png" alt="git logo" data-aos="zoom-out-down">
+
+        </div>
+        <div class="box">
             <img src="assets/img/logo/php_logo.svg" alt="php logo" data-aos="zoom-out-right">
+
+        </div>
+        <div class="box">
             <img src="assets/img/logo/wordpress_logo.png" alt="wordpress logo" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+
+        </div>
+        <div class="box">
             <img src="assets/img/logo/symfony_logo.png" alt="symfony logo" data-aos="flip-right">
+
+        </div>
+        <div class="box">
             <img src="assets/img/logo/ionic_logo.png" alt="ionic logo" data-aos="flip-up">
-            <img src="assets/img/logo/angular_logo.png" alt="angular logo" data-aos="zoom-out-left">
+
+        </div>
+        <div class="box">
+            <img src="assets/img/logo/angular_logo.png" alt="angular js logo" data-aos="zoom-out-left">
 
         </div>
 
-    </section> -->
+        </div>
+        <h2>W trakcie nauki</h2>
+        <div class="box">
+            <img src="assets/img/logo/react_logo.svg" alt="react js logo" data-aos="zoom-out-left">
+
+        </div>
+        <div class="box">
+            <img src="assets/img/logo/nodejs_logo.png" alt="node js logo" data-aos="zoom-out-left">
+
+        </div>
+
+    </section>
+
+
+    <!-- WORKS -->
+    <section class="projects" id="projects">
+        <h2>Prace</h2>
+
+    </section>
 
 
     <!-- CONTACT -->
@@ -136,13 +200,14 @@
 
 
 
-
+    <button id="backToTop">Back to top</button>
 
 
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/parallax.js"></script>
-    <script src="assets/js/main.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
 
 
 
