@@ -35,7 +35,7 @@ body {
 header {
     height: 100vh;
     position: relative;
-    background-image: url(../img/desert.jpg);
+    background-image: url(../img/desert-small.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -231,6 +231,12 @@ header {
     .box {
         width: 30%;
         display: inline-block;
+        @media(max-width: 760px) {
+            width: 48%;
+        }
+        @media(max-width: 435px) {
+            width: 100%;
+        }
         img {
             margin: 2em 0;
             height: 100px;
@@ -247,6 +253,35 @@ header {
             text-align: center;
             line-height: 30px;
             color: white;
+        }
+    }
+}
+
+/*Projects*/
+
+.projects {
+    background-color: #fff; // background-image: url(../img/shadow.png);
+    // background-size: cover;
+    h2 {
+        text-align: center;
+        font-family: $main-font;
+        color: #4d9a85;
+    }
+    .project {
+        width: 49%;
+        display: inline-block;
+        margin: 1em 0;
+        text-align: center;
+        text-align: center; // margin: 1em 0.44em;
+        img {
+            height: 200px;
+            width: auto;
+        }
+        p {
+            display: inline-block;
+            text-align: left;
+            padding: 1em 3em;
+            color: rgb(143, 129, 88);
         }
     }
 }
@@ -268,9 +303,14 @@ header {
 
 #backToTop {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 20px;
+    bottom: 20px;
     display: none;
+    width: 50px;
+    height: 50px;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 // canvas {
